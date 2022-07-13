@@ -14,7 +14,7 @@
 
 <script>
   function getNext() {
-    console.log('button logged');
+    document.getElementById('btn').disabled = true;
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 
@@ -22,6 +22,7 @@
       if (this.readyState === 4) {
         const pickup = JSON.parse(this.response);
         document.getElementById('pickupLines').innerText = pickup.line;
+        document.getElementById('btn').disabled = false;
       }
     });
 
