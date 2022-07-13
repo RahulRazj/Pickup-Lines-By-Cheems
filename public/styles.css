@@ -11,12 +11,6 @@ h1,
 h2,
 h3,
 h4,
-ul,
-li,
-a,
-p,
-input,
-label,
 button,
 div,
 footer {
@@ -66,7 +60,7 @@ header img {
 }
 header h3 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   font-size: 2em;
   padding-right: 40px;
   margin-bottom: 10px;
@@ -82,7 +76,7 @@ header h5 {
 
 footer {
   text-align: center;
-  margin-top: 140px;
+  margin-top: 120px;
   color: #aaa;
 }
 
@@ -97,28 +91,37 @@ footer {
     margin-bottom: 40px;
   }
   header h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 40px;
     margin-bottom: 0;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     text-align: center;
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    /* margin-right: 10px; */
+    top: 40%;
+    left: 10%;
+    /* right: -5%; */
   }
   header h5 {
     font-size: 1em;
     margin-bottom: 0;
     margin-left: 0;
-    margin-left: 22px;
+    /* margin-left: 22px; */
     position: absolute;
-    bottom: 25%;
+    left: 20%;
+    top: 58%;
   }
   button {
+    height: 5vh;
+    width: 30vw;
     position: absolute;
-    bottom: 15%;
+    left: 5%;
+    top: 65%;
     margin-top: 20px;
     margin-left: 115px;
   }
-  footer{
+  footer {
     position: absolute;
     bottom: 20;
   }
