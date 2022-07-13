@@ -10,7 +10,7 @@ app.get('/getLine', async (req, res) => {
   res.send(data.data);
 });
 
-app.get('/pickup', (req, res) => {
+app.get('/', (req, res) => {
   res.render('home');
 });
 
