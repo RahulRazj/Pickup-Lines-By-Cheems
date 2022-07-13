@@ -1,0 +1,36 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <!-- <link rel="icon" href="/public/cheems.png"> -->
+  <div class="smoothie">
+    <img src="/cheems.png" alt="" />
+  </div>
+  <div class="headings">
+    <h3 id="pickupLines">Click Next for a Pickup Line by Cheems</h3>
+    <h5>- By Cheems For Cheems</h5>
+    <button class="btn" onclick="getNext()">Next</button>
+  </div>
+</header>
+
+<script>
+  function getNext() {
+    console.log('button logged');
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        const pickup = JSON.parse(this.response);
+        document.getElementById('pickupLines').innerText = pickup.line;
+      }
+    });
+
+    xhr.open("GET", "http://localhost:3000/getLine");
+
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.send();
+  };
+</script>
+
+<%- include('partials/footer'); -%>
