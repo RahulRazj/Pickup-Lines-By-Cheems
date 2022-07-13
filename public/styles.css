@@ -78,6 +78,9 @@ footer {
   text-align: center;
   margin-top: 120px;
   color: #aaa;
+  position: absolute;
+  bottom: 10;
+  left: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -86,43 +89,51 @@ footer {
     justify-content: center;
   }
   header img {
-    width: 150px;
+    height: 180px;
+    width: 160px;
     margin-right: 0;
+    position: absolute;
+    top: 12%;
+    left: 28%;
     margin-bottom: 40px;
   }
   header h3 {
     font-size: 1.2em;
     margin-top: 40px;
     margin-bottom: 0;
-    /* margin-left: 10px; */
     text-align: center;
     width: 80%;
     position: absolute;
-    /* margin-right: 10px; */
-    top: 40%;
+    top: 38%;
     left: 10%;
-    /* right: -5%; */
   }
   header h5 {
     font-size: 1em;
     margin-bottom: 0;
     margin-left: 0;
-    /* margin-left: 22px; */
     position: absolute;
-    left: 20%;
-    top: 58%;
+    left: 15%;
+    top: 67%;
   }
   button {
     height: 5vh;
     width: 30vw;
     position: absolute;
     left: 5%;
-    top: 65%;
+    top: 75%;
     margin-top: 20px;
     margin-left: 115px;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   footer {
     position: absolute;
     bottom: 20;
+    left: 20%;
+    font-size: 0.8rem;
+    width: 65%;
   }
 }
