@@ -11,7 +11,7 @@ app.use(express.static("public"));
 
 app.get('/getLine', async (req, res) => {
   const data = await getPickupLines();
-  res.send(data.data);
+  res.send(data.data[0]);
 });
 
 app.get('/', (req, res) => {
