@@ -7,7 +7,7 @@
   </div>
   <div class="headings">
     <h3 id="pickupLines">Click Next for a Pickup Line by Cheems</h3>
-    <h5>- By Cheems For Cheems</h5>
+    <h5 id="author">- By Dogesh Cheems</h5>
     <button id="btn" onclick="getNext()">Next</button>
   </div>
 </header>
@@ -22,6 +22,7 @@
       if (this.readyState === 4) {
         const pickup = JSON.parse(this.response);
         document.getElementById('pickupLines').innerText = pickup.line;
+        document.getElementById('author').innerText = ' - By ' + pickup.author;
         document.getElementById('btn').disabled = false;
       }
     });
