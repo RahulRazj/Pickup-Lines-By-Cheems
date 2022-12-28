@@ -4,7 +4,7 @@ exports.getPickupLines = async () => {
   var data = "";
   var config = {
     method: "get",
-    url: "https://cheemspickupapi.herokuapp.com/joke",
+    url: "https://cheemspickupapi.cyclic.app/joke",
     headers: {},
     data: data,
   };
