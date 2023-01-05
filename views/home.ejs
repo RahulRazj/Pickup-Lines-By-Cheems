@@ -21,7 +21,7 @@
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === 4) {
         if(this.response && this.response.at()) {
-          const pickup = JSON.parse(this.response.at());
+          const pickup = this.response.at();
           document.getElementById('pickupLines').innerText = pickup.line;
           document.getElementById('author').innerText = ' - By ' + pickup.author;
           document.getElementById('btn').disabled = false;
